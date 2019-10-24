@@ -1,5 +1,5 @@
 <p align="center">
- ![Davy Jones](/assets/locker.png)
+ ![Davy Jones](https://github.com/voutasaurus/locker/blob/master/assets/locker.png)
 </p>
 
 ## Locker
