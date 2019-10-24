@@ -1,5 +1,5 @@
 <p align="center">
- ![Davy Jones](/dist/assets/locker.png)
+ ![Davy Jones](/assets/locker.png)
 </p>
 
 ## Locker
