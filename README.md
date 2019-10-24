@@ -1,3 +1,7 @@
+<p align="center">
+ ![Davy Jones](/dist/assets/locker.png)
+</p>
+
 ## Locker
 
 A better user experience for Kubernetes secrets.
