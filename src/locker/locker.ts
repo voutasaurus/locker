@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { KubeConfig, CoreV1Api } from '@kubernetes/client-node';
 
-const namespace = process.env.NAMESPACE;
+const namespace = process.env.NAMESPACE || 'default';
 
 export async function listsecrets(): Promise<any> {
   const kc = new KubeConfig();

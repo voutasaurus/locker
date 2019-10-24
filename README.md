@@ -14,6 +14,8 @@ $ npm install
 
 ## Running the app
 
+Set the NAMESPACE variable to point to specific kubernetes namespace (default is default).
+
 ```bash
 # development
 $ npm run start
