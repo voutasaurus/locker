@@ -1,6 +1,6 @@
 ## Locker
 
-An better user experience for Kubernetes secrets.
+A better user experience for Kubernetes secrets.
 
 ## Project Status
 
