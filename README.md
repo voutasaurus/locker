@@ -4,7 +4,7 @@ A better user experience for Kubernetes secrets.
 
 ## Project Status
 
-Pre 0.0.0
+Pre 0.0.0 (Aspirational). Please help me make this not suck.
 
 ## Installation
 
