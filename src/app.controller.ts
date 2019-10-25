@@ -6,12 +6,6 @@ import { listNamespaces } from 'dist/locker/locker';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get()
-  homepage(): string {
-    // TODO: serve frontend app
-    return 'Locker';
-  }
-
   @Get('/contexts')
   listContexts(): any {
     return this.appService.listContexts();
