@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Davy Jones" src="https://raw.githubusercontent.com/voutasaurus/locker/master/assets/locker.png">
+  <img title="Davy Jones" src="https://raw.githubusercontent.com/voutasaurus/locker/master/assets/locker.png">
 </p>
 
 ## Locker
