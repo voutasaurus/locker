@@ -1,4 +1,6 @@
-![test](https://raw.githubusercontent.com/voutasaurus/locker/master/assets/locker.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/voutasaurus/locker/master/assets/locker.png">
+</p>
 
 ## Locker
 
