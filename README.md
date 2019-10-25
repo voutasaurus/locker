@@ -18,7 +18,9 @@ $ npm install
 
 ## Running the app
 
-Set the NAMESPACE variable to point to specific kubernetes namespace (default is default).
+[NOTE: if you do not have permissions to list the namespaces in your
+environment (e.g. shared cluster) then set the NAMESPACES variable to a comma
+separated list of all the namespaces that you have access to]
 
 ```bash
 # development
