@@ -8,7 +8,16 @@ export class AppService {
   }
 
   listNamespaces(context: string): any {
-    return listNamespaces(context);
+    // NAMESPACES overrides the api (for permissions issues)
+    const namespaces = process.env.NAMESPACES;
+    if (namespaces == null || namespaces === '' ) {
+      return listNamespaces(context);
+    }
+    const arr = [];
+    namespaces.split(',').forEach(element => {
+      arr.push(element);
+    });
+    return arr;
   }
 
   async list(context: string, namespace: string): Promise<any> {
