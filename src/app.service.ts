@@ -1,10 +1,18 @@
 import { Injectable } from '@nestjs/common';
-import { listsecrets, secret } from './locker/locker';
+import { listContexts, listNamespaces, listSecrets, secret } from './locker/locker';
 
 @Injectable()
 export class AppService {
+  listContexts(): any {
+    return listContexts();
+  }
+
+  listNamespaces(context: string): any {
+    return listNamespaces(context);
+  }
+
   async list(context: string, namespace: string): Promise<any> {
-    return await listsecrets(context, namespace);
+    return await listSecrets(context, namespace);
   }
 
   async get(context: string, namespace: string, name: string): Promise<any> {

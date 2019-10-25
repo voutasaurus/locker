@@ -1,5 +1,6 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { AppService } from './app.service';
+import { listNamespaces } from 'dist/locker/locker';
 
 @Controller()
 export class AppController {
@@ -11,12 +12,22 @@ export class AppController {
     return 'Locker';
   }
 
-  @Get('secret/:context/:namespace')
+  @Get('/contexts')
+  listContexts(): any {
+    return this.appService.listContexts();
+  }
+
+  @Get('/namespaces/:context')
+  listNamespaces(@Param() params): any {
+    return this.appService.listNamespaces(params.context);
+  }
+
+  @Get('secrets/:context/:namespace')
   async list(@Param() params): Promise<any> {
     return this.appService.list(params.context, params.namespace);
   }
 
-  @Get('secret/:context/:namespace/:name')
+  @Get('secrets/:context/:namespace/:name')
   async get(@Param() params): Promise<any> {
     return this.appService.get(params.context, params.namespace, params.name);
   }

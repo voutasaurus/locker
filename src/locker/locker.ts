@@ -1,6 +1,31 @@
 import { KubeConfig, CoreV1Api } from '@kubernetes/client-node';
 
-export async function listsecrets(context: string, namespace: string): Promise<any> {
+export function listContexts(): any {
+  const kc = new KubeConfig();
+  kc.loadFromDefault();
+  const arr = [];
+  kc.contexts.forEach(element => {
+    arr.push(element.name);
+  });
+  return arr;
+}
+
+export async function listNamespaces(context: string): Promise<any> {
+  const kc = new KubeConfig();
+  kc.loadFromDefault();
+  if (context != null && context !== '') {
+    kc.currentContext = context;
+  }
+  const k8sApi = kc.makeApiClient(CoreV1Api);
+  const res = await k8sApi.listNamespace();
+  const arr = [];
+  res.body.items.forEach(element => {
+    arr.push(element.metadata.name);
+  });
+  return arr;
+}
+
+export async function listSecrets(context: string, namespace: string): Promise<any> {
   const kc = new KubeConfig();
   kc.loadFromDefault();
   if (context != null && context !== '') {
