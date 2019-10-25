@@ -6,18 +6,19 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  async list(): Promise<any> {
-    return this.appService.list();
+  homepage(): string {
+    // TODO: serve frontend app
+    return 'Locker';
   }
 
-  @Get('favicon.ico')
-  favicon(): string {
-    return this.appService.favicon();
+  @Get('secret/:context/:namespace')
+  async list(@Param() params): Promise<any> {
+    return this.appService.list(params.context, params.namespace);
   }
 
-  @Get(':name')
+  @Get('secret/:context/:namespace/:name')
   async get(@Param() params): Promise<any> {
-    return this.appService.get(params.name);
+    return this.appService.get(params.context, params.namespace, params.name);
   }
 
 }

@@ -3,15 +3,12 @@ import { listsecrets, secret } from './locker/locker';
 
 @Injectable()
 export class AppService {
-  async list(): Promise<any> {
-    return await listsecrets();
+  async list(context: string, namespace: string): Promise<any> {
+    return await listsecrets(context, namespace);
   }
 
-  async get(name: string): Promise<any> {
-    return await secret(name);
+  async get(context: string, namespace: string, name: string): Promise<any> {
+    return await secret(context, namespace, name);
   }
 
-  favicon(): string {
-    return 'todo';
-  }
 }
