@@ -1,11 +1,4 @@
-<p align="center">
-![Davy Jones](https://raw.githubusercontent.com/voutasaurus/locker/master/assets/locker.png)
-</p>
-
 ![test](https://raw.githubusercontent.com/voutasaurus/locker/master/assets/locker.png)
-
-[test2](https://raw.githubusercontent.com/voutasaurus/locker/master/assets/locker.png)
-
 
 ## Locker
 
