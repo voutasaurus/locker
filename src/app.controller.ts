@@ -1,6 +1,5 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { AppService } from './app.service';
-import { listNamespaces } from 'dist/locker/locker';
 
 @Controller()
 export class AppController {
