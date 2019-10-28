@@ -42,26 +42,29 @@
 }
 
 .Cluster-logo {
-  height: 40px;
-  padding-top: 0.3em;
-}
-
-.Cluster-button-text {
-  padding-top: 0.3em;
-  padding-left: 0.3em;
-  padding-right: 0.3em;
+  height: 50px;
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
 }
 
 .Cluster-dropdown {
-  padding-left: 4em;
+  padding-left: 3.5em;
   padding-top: 0.35em;
+  padding-bottom: 0.35em;
+  display: flex;
+  flex-direction: row;
 }
 
-.btn-secondary {
-  background: #f0f0f0;
-  border-color: #f0f0f0;
+.Cluster-selector {
+  border-width: 0px;
+  background:  #f0f0f0;
   color: rgb(68, 82, 58);
   display: flex;
   flex-direction: row;
   width: fit-content !important;
+  font-weight: 300;
+}
+
+.Zero-clusters {
+  padding-top: 4em;
 }
