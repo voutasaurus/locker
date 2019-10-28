@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+    locker-backend:
+        build: ./server
+        image: locker-backend
+        container_name: locker-backend
+        working_dir: /app
+        ports:
+            - "3001:3000"
+        expose:
+            - "3001"
+        networks:
+            - locker-network
+        volumes:
+            - ~/.kube:/root/.kube
+            - ~/.aws:/root/.aws
+        environment:
+            - KUBE_CONFIG=/app/.kube/config
+    locker-frontend:
+        build: ./client
+        image: locker-frontend
+        container_name: locker-frontend
+        working_dir: /app
+        ports:
+            - "3000:3000"
+        expose:
+            - "3000"
+        networks:
+            - locker-network
+        depends_on:
+            - locker-backend
+
+networks:
+    locker-network:
