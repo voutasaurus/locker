@@ -1,5 +1,5 @@
 <p align="center">
-  <img title="Davy Jones" src="https://raw.githubusercontent.com/voutasaurus/locker/master/assets/locker.png">
+  <img title="Davy Jones" src="https://raw.githubusercontent.com/voutasaurus/locker/master/server/assets/locker.png">
 </p>
 
 ## Locker
@@ -31,28 +31,28 @@ of all the namespaces that you have access to]
 
 ## TADA
 
--[x] Application can be run with docker-compose
--[x] Application uses local aws and kubernetes configuration (aws-iam-authenticator)
--[x] Backend calls kubernetes API
--[x] Backend lists clusters
--[x] Backend lists namespaces in a cluster
--[x] Backend lists secret objects in a namespace
--[x] Backend lists key value pairs in a secret object
--[x] Frontend lists clusters as a dropdown
--[ ] Frontend Cluster selection shows namespaces
--[ ] Frontend Namespaces selection shows secrets
--[ ] Frontend Secrets selection shows key value pairs
--[ ] Frontend Secret object can be exported to yaml (download)
--[ ] Backend can add a secret
--[ ] Backend can rename a secret
--[ ] Backend can delete a secret
--[ ] Backend can add a key value to a secret
--[ ] Backend can modify a key value in a secret
--[ ] Backend can delete a key in a secret
--[ ] Frontend can add a secret
--[ ] Frontend can rename a secret
--[ ] Frontend can delete a secret
--[ ] Frontend can add key value to a secret
--[ ] Frontend can modify a key value in a secret
--[ ] Frontend can delete a key in a secret
--[ ] Frontend key value view can hide and reveal the values (they're secret after all)
+- [x] Application can be run with docker-compose
+- [x] Application uses local aws and kubernetes configuration (aws-iam-authenticator)
+- [x] Backend calls kubernetes API
+- [x] Backend lists clusters
+- [x] Backend lists namespaces in a cluster
+- [x] Backend lists secret objects in a namespace
+- [x] Backend lists key value pairs in a secret object
+- [x] Frontend lists clusters as a dropdown
+- [ ] Frontend Cluster selection shows namespaces
+- [ ] Frontend Namespaces selection shows secrets
+- [ ] Frontend Secrets selection shows key value pairs
+- [ ] Frontend Secret object can be exported to yaml (download)
+- [ ] Backend can add a secret
+- [ ] Backend can rename a secret
+- [ ] Backend can delete a secret
+- [ ] Backend can add a key value to a secret
+- [ ] Backend can modify a key value in a secret
+- [ ] Backend can delete a key in a secret
+- [ ] Frontend can add a secret
+- [ ] Frontend can rename a secret
+- [ ] Frontend can delete a secret
+- [ ] Frontend can add key value to a secret
+- [ ] Frontend can modify a key value in a secret
+- [ ] Frontend can delete a key in a secret
+- [ ] Frontend key value view can hide and reveal the values (they're secret after all)
