@@ -15,8 +15,9 @@ services:
         volumes:
             - ~/.kube:/root/.kube
             - ~/.aws:/root/.aws
-        environment:
-            - KUBE_CONFIG=/app/.kube/config
+# Uncomment the following to override the list namespace request to k8s
+#       environment:
+#           - NAMESPACES=namespace-one,namespace-two
     locker-frontend:
         build: ./client
         image: locker-frontend
